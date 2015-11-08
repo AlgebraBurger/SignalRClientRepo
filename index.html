@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+<meta charset='utf-8' />
+	<title>SignalR Client</title>
+	
+	<script type="text/javascript" src="/bower_components/jquery/dist/jquery.js" charset="UTF-8"></script>	
+	<script type="text/javascript" src="/bower_components/angular/angular.js" charset="UTF-8"></script>	
+	<script type="text/javascript" src="/bower_components/signalr/jquery.signalR.js" charset="UTF-8"></script>
+	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">	
+	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap-theme.css">	
+
+	<script type="text/javascript" src="/app/app.js" charset="UTF-8"></script>	
+	<script type="text/javascript" src="/app/controllers/SignalRCtrl.js" charset="UTF-8"></script>	
+
+	 <script src="http://localhost:57004/signalr/hubs"></script>
+
+
+</head>
+<body>	
+	<div class="container" ng-controller="SignalRCtrl">
+		<div class="panel">
+			<div class="panel panel-default">
+			<div class="panel-heading">
+				SignalR / AngularJs / Bootstrap / Jquery
+			</div>
+			<div class="panel-body">
+				<div>{{message}}</div>
+			</div>
+		</div>	
+		</div>		
+	</div>
+</body>
+</html>
